@@ -10,22 +10,29 @@ describe('@Test Main', () => {
   describe('# fizzbuzz', () => {
 
     it('should return fizz if number es mod 3', () => {
-      const result = component.fizzbuzz(9);
+      // arrange
+      const numberToEvaluate = 9;
+      // act
+      const result = component.fizzbuzz(numberToEvaluate);
+      // assert
       expect(result).toEqual('fizz');
     })
 
     it('should return buzz if number es mod 5', () => {
-      const result = component.fizzbuzz(25);
+      const numberToEvaluate = 25;
+      const result = component.fizzbuzz(numberToEvaluate);
       expect(result).toEqual('buzz');
     })
 
     it('should return fizz buzz if number es mod 3 and 5', () => {
-      const result = component.fizzbuzz(30);
+      const numberToEvaluate = 30;
+      const result = component.fizzbuzz(numberToEvaluate);
       expect(result).toEqual('fizz buzz');
     })
 
     it('should return num for other cases', () => {
-      const result = component.fizzbuzz(7);
+      const numberToEvaluate = 7;
+      const result = component.fizzbuzz(numberToEvaluate);
       expect(result).toEqual('7');
     })
 
